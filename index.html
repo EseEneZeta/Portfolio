@@ -2,19 +2,21 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Portfolio de Mateo Acha Sánchez</title>
+  <title>Portfolio de Mateo Achá Sánchez</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Enlace a la hoja de estilos -->
   <link rel="stylesheet" href="styles.css">
-  <!-- Enlace a Google Fonts para fuentes personalizadas -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Fuente -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
   <!-- Enlace a Font Awesome para íconos -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
   <!-- Navegación principal -->
   <nav id="menu">
-    <div class="logo">Mateo Acha Sánchez</div>
+    <div class="logo">Mateo Achá Sánchez</div>
     <ul>
       <li><a href="#inicio">Inicio</a></li>
       <li><a href="#sobre-mi">Sobre Mí</a></li>
@@ -34,7 +36,28 @@
 
   <!-- Sección de inicio con animación -->
   <section id="inicio">
+    <!-- Capa de superposición -->
     <div class="overlay"></div>
+
+    <!-- Animación de fondo con círculos -->
+    <div class="area">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li>
+      </ul>
+    </div>
+
+    <!-- Contenido de la sección de inicio -->
     <div class="inicio-content">
       <h1 class="titulo-principal">Bienvenido a mi Portfolio</h1>
       <p class="subtitulo">Desarrollador Web en Formación</p>
@@ -52,7 +75,10 @@
         <a href="./pdf/CV-MateoAchá-Español.pdf" class="btn-descargar-cv" download>Descargar CV</a>
       </div>
     </div>
-</section>
+  </section>
+</body>
+</html>
+
 
 
   <!-- Sección de experiencia -->
@@ -167,6 +193,11 @@
             <td><img src="imagenes/icons8-españa-48.png" alt="Español Logo"></td>
           </tr>
           <tr>
+            <td>Catalán</td>
+            <td>Nativo</td>
+            <td><img src="imagenes/bandera.png" alt="Catalán logo"></td>
+          </tr>
+          <tr>
             <td>Inglés</td>
             <td>Avanzado</td>
             <td><img src="imagenes/icons8-inglaterra-48.png" alt="Inglés Logo"></td>
@@ -188,9 +219,9 @@
       </div>
       <!-- Proyecto 2 -->
       <div class="proyecto-item">
-        <img src="proyectos/proyecto2.png" alt="Proyecto 2">
+        <img src="imagenes/Captura de pantalla 2024-12-13 161014.png" alt="Proyecto 2">
         <h3> Proyecto 2</h3>
-        <p>Descripción <a href="https://github.com/tuusuario/proyecto2" target="_blank">Ver en GitHub</a></p>
+        <p>Proyecto de una web de un restaurante de Kebab <a href="https://github.com/EseEneZeta/Restaurante-Kebab" target="_blank">Ver en GitHub</a></p>
       </div>
     </div>
   </section>
@@ -199,20 +230,20 @@
   <section id="contacto">
     <h2>Contacto</h2>
     <p>Estoy disponible para oportunidades y colaboraciones.</p>
-    <form id="contact-form">
+    <form id="contact-form" action="https://formspree.io/f/mbljeevl" method="POST">
       <input type="text" name="nombre" placeholder="Tu Nombre" required>
       <input type="email" name="email" placeholder="Tu Email" required>
       <input type="text" name="asunto" placeholder="Asunto" required>
       <textarea name="mensaje" placeholder="Tu Mensaje" required></textarea>
       <button type="submit">Enviar Mensaje</button>
-    </form>
+    </form>    
     <div class="info-contacto">
       <p><strong>Email:</strong> <a href="mailto:mateoachasanchez07@gmail.com">mateoachasanchez07@gmail.com</a></p>
       <p><strong>Teléfono:</strong> <a href="tel:+34627108632">+34 627108632</a></p>
       <p><strong>LinkedIn:</strong> <a href="#">Perfil en LinkedIn</a></p>
     </div>
-  </section>
-  <footer>
+</section>
+ <footer>
     <p>&copy; 2023 Mateo Acha Sánchez. Todos los derechos reservados.</p>
   </footer>
   <script src="script.js"></script>
